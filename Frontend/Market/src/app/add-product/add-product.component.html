@@ -1,0 +1,27 @@
+ <div fxLayoutAlign="strech" fxFlexFill class="main-div">
+    <mat-card fxFlex="100">
+        <mat-toolbar color = "primary">Add Product</mat-toolbar>
+            <form fxLayoutAlign="strech" fxLayout="column" class="login-form" [formGroup]="AddProductForm" (ngSubmit)="addProduct()">
+                <mat-form-field>
+                  <input matInput placeholder="Product Id" formControlName="productId">
+                </mat-form-field>
+              
+                <mat-form-field>
+                    <input matInput placeholder="Product Category" formControlName="productCategory">
+                  </mat-form-field>
+
+                  <mat-form-field>
+                    <input matInput placeholder="Product Name" formControlName="productName">
+                  </mat-form-field>
+                  <mat-form-field>
+                    <input matInput placeholder="Product Description" formControlName="productDescription">
+                  </mat-form-field>
+                  <mat-form-field>
+                    <input matInput placeholder="Product Units" formControlName="units">
+                  </mat-form-field>
+                  
+                  <button mat-raised-button type = "submit" class="login-btn" color = "primary"> Save</button>
+                  <button mat-raised-button  class="reg-btn"(click)="activeModal.close('Close click')"> Cancel</button>
+            </form>
+    </mat-card>
+</div>

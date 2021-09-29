@@ -1,0 +1,20 @@
+.main-div mat-card{
+    padding: 0px;
+}
+
+.update-form {
+    padding:20px;
+}
+
+.save-btn{
+    align-content: center;
+    color: white;
+    margin: 5px;
+}
+
+.cancel-btn{
+    align-content: center;
+    color: white;
+    background-color: green;
+    margin: 5px;
+}

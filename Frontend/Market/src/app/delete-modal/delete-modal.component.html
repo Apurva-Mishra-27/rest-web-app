@@ -1,0 +1,28 @@
+<!-- <div class="modal-header">
+    <h4 class="modal-title">Delete Product</h4>
+    <button type="button" style="color:#ffffff" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>Are you sure you want to delete {{name}}?</p>
+ 
+  <div style="margin-bottom: 2%; text-align: right;">
+    <button type="button" class="btn-primary" style="color:black; background-color: #ffffff; margin-right: 10px; " (click)="activeModal.dismiss()" >Cancel</button>
+    <button type="button" class="btn-primary" style=" background-color: #3F51B5; color: #ffffff;" (click)="deleteProduct(id)" >Delete</button>
+  </div>
+</div> -->
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+  <mat-card fxFlex="100">
+      <mat-toolbar color = "primary">Delete Product</mat-toolbar>
+      <div fxLayoutAlign="strech" fxLayout="column">
+        <div fxFlex="100" style="text-align: center; font-size: large; margin: 10px;">
+      Are you Sure you want to delete "<b>{{name}}</b>"?
+        </div>
+    <mat-card fxFlex="100" fxLayout="column">
+      <button  mat-raised-button type="button" class="login-btn" color = "primary" (click)="deleteProduct(id)" >Delete</button>
+      <button  mat-raised-button type="button" class="reg-btn" (click)="activeModal.dismiss()" >Cancel</button>
+      </mat-card>
+    </div>
+      </mat-card>
+      </div>

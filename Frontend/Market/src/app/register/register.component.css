@@ -1,0 +1,20 @@
+.main-div mat-card{
+    padding: 0px;
+}
+
+.login-form {
+    padding:20px;
+}
+
+.login-btn{
+    align-content: center;
+    color: white;
+    margin: 5px;
+}
+
+.reg-btn{
+    align-content: center;
+    color: white;
+    background-color: green;
+    margin: 5px;
+}

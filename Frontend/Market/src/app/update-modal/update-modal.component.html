@@ -1,0 +1,28 @@
+ <div fxLayoutAlign="stretch" fxFlexFill class="main-div">
+    <mat-card fxFlex="100">
+        <mat-toolbar color = "primary">Update Product</mat-toolbar>
+            <form fxLayoutAlign="strech" fxLayout="column" class="update-form" [formGroup]="UpdateProductForm" (ngSubmit)="updateProduct(prod.productId)">
+                <mat-form-field>
+                  <input matInput placeholder="Product Id" formControlName="productId"  matTooltip="Product Id cannot be updated" value="{{prod.productId}}" readonly>
+                </mat-form-field>
+              
+                <mat-form-field>
+                    <input matInput placeholder="Product Category" formControlName="productCategory" value="{{prod.productCategory}}">
+                  </mat-form-field>
+
+                  <mat-form-field>
+                    <input matInput placeholder="Product Name" formControlName="productName" value="{{prod.productName}}">
+                  </mat-form-field>
+                  <mat-form-field>
+                    <input matInput placeholder="Product Description" formControlName="productDescription" value="{{prod.productDescription}}" >
+                  </mat-form-field>
+                  <mat-form-field>
+                    <input matInput placeholder="Product Units" formControlName="units" value="{{prod.units}}">
+                  </mat-form-field>
+                  
+                  <button mat-raised-button type = "submit" class="save-btn" color = "primary"> Save</button>
+                  <button mat-raised-button  class="cancel-btn"(click)="activeModal.close('Close click')"> Cancel</button>
+                 
+            </form>
+    </mat-card>
+</div>

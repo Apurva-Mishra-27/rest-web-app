@@ -1,0 +1,30 @@
+.modal-header{
+    
+    background-color: #3F51B5;
+}
+
+.modal-title{
+    color: #ffffff;
+    margin-bottom: 0px;
+    font-size:24px;
+}
+.mandatory::after{
+    content: ' *';
+    color:red;
+}
+.main-div mat-card{
+    padding: 0px;
+}
+.login-btn{
+    align-content: center;
+    color: white;
+    margin: 5px;
+}
+
+.reg-btn{
+    align-content: center;
+    color: white;
+    background-color: green;
+    margin: 5px;
+    margin-bottom: 10px !important;
+}
